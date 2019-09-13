@@ -7095,6 +7095,13 @@ http://dangerousprototypes.com</description>
 <label x="48.26" y="27.94" size="1.778" layer="95" rot="MR0"/>
 <pinref part="U$24" gate="G$1" pin="SCL"/>
 </segment>
+<segment>
+<label x="-46.99" y="8.89" size="1.778" layer="95"/>
+<wire x1="-46.99" y1="8.89" x2="-21.59" y2="8.89" width="0.1524" layer="91"/>
+<wire x1="-21.59" y1="8.89" x2="-21.59" y2="11.43" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="10"/>
+<wire x1="-21.59" y1="11.43" x2="-24.13" y2="11.43" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="PC1-SDA" class="0">
 <segment>
@@ -7106,6 +7113,11 @@ http://dangerousprototypes.com</description>
 <wire x1="40.64" y1="25.4" x2="35.56" y2="25.4" width="0.1524" layer="91"/>
 <label x="48.26" y="25.4" size="1.778" layer="95" rot="MR0"/>
 <pinref part="U$24" gate="G$1" pin="SDA"/>
+</segment>
+<segment>
+<label x="-46.99" y="11.43" size="1.778" layer="95"/>
+<wire x1="-46.99" y1="11.43" x2="-31.75" y2="11.43" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="9"/>
 </segment>
 </net>
 <net name="Y-STEP" class="0">
@@ -7301,11 +7313,6 @@ http://dangerousprototypes.com</description>
 <pinref part="IC2" gate="G$1" pin="PCINT5/ADC5_PA5"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
 </segment>
-<segment>
-<label x="-46.99" y="11.43" size="1.778" layer="95"/>
-<wire x1="-46.99" y1="11.43" x2="-31.75" y2="11.43" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="9"/>
-</segment>
 </net>
 <net name="!FTDI-RESET" class="0">
 <segment>
@@ -7465,15 +7472,6 @@ http://dangerousprototypes.com</description>
 <junction x="59.69" y="149.86"/>
 </segment>
 </net>
-<net name="SCL" class="0">
-<segment>
-<label x="-46.99" y="8.89" size="1.778" layer="95"/>
-<wire x1="-46.99" y1="8.89" x2="-21.59" y2="8.89" width="0.1524" layer="91"/>
-<wire x1="-21.59" y1="8.89" x2="-21.59" y2="11.43" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="10"/>
-<wire x1="-21.59" y1="11.43" x2="-24.13" y2="11.43" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SCK" class="0">
 <segment>
 <wire x1="-36.83" y1="19.05" x2="-46.99" y2="19.05" width="0.1524" layer="91"/>
@@ -7493,13 +7491,6 @@ http://dangerousprototypes.com</description>
 <label x="-46.99" y="13.97" size="1.778" layer="95"/>
 <wire x1="-46.99" y1="13.97" x2="-31.75" y2="13.97" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="7"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="JP2" gate="A" pin="8"/>
-<wire x1="-24.13" y1="13.97" x2="-19.05" y2="13.97" width="0.1524" layer="91"/>
-<wire x1="-19.05" y1="13.97" x2="-19.05" y2="11.43" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

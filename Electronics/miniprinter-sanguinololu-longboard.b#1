@@ -290,6 +290,11 @@
 <text x="50.5" y="-9.6" size="0.8128" layer="21" ratio="15">22p</text>
 <text x="32.7" y="-3.3" size="0.8128" layer="21" ratio="15">auto</text>
 <text x="33.3" y="-9.6" size="0.8128" layer="21" ratio="15">rst</text>
+<text x="16.2" y="-17.7" size="0.8128" layer="21" ratio="15">FT232</text>
+<text x="81.6" y="-19.6" size="0.8128" layer="21" ratio="15" rot="R90">100UF</text>
+<text x="108.6" y="-19.4" size="0.8128" layer="21" ratio="15" rot="R90">100UF</text>
+<text x="134.8" y="-19.8" size="0.8128" layer="21" ratio="15" rot="R90">100UF</text>
+<text x="160.9" y="-19.6" size="0.8128" layer="21" ratio="15" rot="R90">100UF</text>
 </plain>
 <libraries>
 <library name="atmel">

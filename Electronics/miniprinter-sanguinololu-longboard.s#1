@@ -6774,6 +6774,13 @@ http://dangerousprototypes.com</description>
 <label x="198.12" y="101.6" size="1.778" layer="95"/>
 <pinref part="U$24" gate="G$2" pin="SCK"/>
 </segment>
+<segment>
+<wire x1="-36.83" y1="19.05" x2="-46.99" y2="19.05" width="0.1524" layer="91"/>
+<label x="-46.99" y="19.05" size="1.778" layer="95"/>
+<pinref part="JP2" gate="A" pin="3"/>
+<junction x="-31.75" y="19.05"/>
+<wire x1="-36.83" y1="19.05" x2="-31.75" y2="19.05" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="PB6-MISO" class="0">
 <segment>
@@ -7306,12 +7313,17 @@ http://dangerousprototypes.com</description>
 <pinref part="IC2" gate="G$1" pin="PCINT8/XCK0/T0_PB0"/>
 </segment>
 </net>
-<net name="A5" class="0">
+<net name="A5_SDS" class="0">
 <segment>
 <wire x1="182.88" y1="71.12" x2="167.64" y2="71.12" width="0.1524" layer="91"/>
 <label x="170.18" y="71.12" size="1.778" layer="95"/>
 <pinref part="IC2" gate="G$1" pin="PCINT5/ADC5_PA5"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<label x="-46.99" y="13.97" size="1.778" layer="95"/>
+<wire x1="-46.99" y1="13.97" x2="-31.75" y2="13.97" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="7"/>
 </segment>
 </net>
 <net name="!FTDI-RESET" class="0">
@@ -7472,25 +7484,9 @@ http://dangerousprototypes.com</description>
 <junction x="59.69" y="149.86"/>
 </segment>
 </net>
-<net name="SCK" class="0">
-<segment>
-<wire x1="-36.83" y1="19.05" x2="-46.99" y2="19.05" width="0.1524" layer="91"/>
-<label x="-46.99" y="19.05" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="3"/>
-<junction x="-31.75" y="19.05"/>
-<wire x1="-36.83" y1="19.05" x2="-31.75" y2="19.05" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="ENC" class="0">
 <segment>
 <wire x1="-80.9625" y1="19.05" x2="-80.9625" y2="18.7325" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="SDS" class="0">
-<segment>
-<label x="-46.99" y="13.97" size="1.778" layer="95"/>
-<wire x1="-46.99" y1="13.97" x2="-31.75" y2="13.97" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="7"/>
 </segment>
 </net>
 </nets>

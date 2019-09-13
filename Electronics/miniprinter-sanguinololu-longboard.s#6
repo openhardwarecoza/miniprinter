@@ -5309,8 +5309,8 @@ http://dangerousprototypes.com</description>
 <part name="U$20" library="Cohesion_parts" deviceset="XL1509" device="" value="XL1509"/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="D15" library="dp_devices" deviceset="DIODE" device="-DO-214AC" value="SS34"/>
-<part name="C17" library="SparkFun" deviceset="CAP_POL" device="PTH4" value="220Uf"/>
-<part name="C18" library="SparkFun" deviceset="CAP_POL" device="PTH4" value="220Uf"/>
+<part name="C17" library="SparkFun" deviceset="CAP_POL" device="PTH1" value="220Uf"/>
+<part name="C18" library="SparkFun" deviceset="CAP_POL" device="PTH1" value="220Uf"/>
 </parts>
 <sheets>
 <sheet>

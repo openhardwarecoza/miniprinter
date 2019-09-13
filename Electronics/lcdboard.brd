@@ -2985,7 +2985,7 @@
 <wire x1="10" y1="-15" x2="10" y2="-5" width="0.1524" layer="20"/>
 <wire x1="90" y1="-15" x2="90" y2="-5" width="0.1524" layer="20"/>
 <text x="13.1" y="25.9" size="0.8128" layer="21" ratio="15" rot="R90">10K</text>
-<text x="78" y="24.8" size="0.8128" layer="21" ratio="15" rot="R90">10K</text>
+<text x="78" y="24.8" size="0.8128" layer="21" ratio="15" rot="R90">1K</text>
 <text x="80.4" y="24.9" size="0.8128" layer="21" ratio="15" rot="R90">10K</text>
 <text x="83" y="24.8" size="0.8128" layer="21" ratio="15" rot="R90">10K</text>
 </plain>
