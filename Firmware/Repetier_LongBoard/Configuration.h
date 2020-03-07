@@ -136,7 +136,7 @@ If a motor turns in the wrong direction change INVERT_X_DIR or INVERT_Y_DIR.
 #define STEPS_PER_ROTATION 200
 
 /** \brief Micro stepping rate of X, Y and Y tower stepper drivers */
-#define MICRO_STEPS 16
+#define MICRO_STEPS 8
 
 // Calculations
 #define AXIS_STEPS_PER_MM ((float)(MICRO_STEPS * STEPS_PER_ROTATION) / PULLEY_CIRCUMFERENCE)
@@ -152,13 +152,13 @@ If a motor turns in the wrong direction change INVERT_X_DIR or INVERT_Y_DIR.
 /** \brief Number of steps for a 1mm move in x direction.
 For xy gantry use 2*belt moved!
 Overridden if EEPROM activated. */
-#define XAXIS_STEPS_PER_MM 428
+#define XAXIS_STEPS_PER_MM 50
 /** \brief Number of steps for a 1mm move in y direction.
 For xy gantry use 2*belt moved!
 Overridden if EEPROM activated.*/
-#define YAXIS_STEPS_PER_MM 428
+#define YAXIS_STEPS_PER_MM 50
 /** \brief Number of steps for a 1mm move in z direction  Overridden if EEPROM activated.*/
-#define ZAXIS_STEPS_PER_MM 3200
+#define ZAXIS_STEPS_PER_MM 200
 #endif
 
 // ##########################################################################################
@@ -207,7 +207,7 @@ Overridden if EEPROM activated.*/
 // length of filament pulled inside the heater. For repsnap or older
 // skeinforge use higher values.
 //  Overridden if EEPROM activated.
-#define EXT0_MAX_FEEDRATE 30
+#define EXT0_MAX_FEEDRATE 200
 // Feedrate from halted extruder in mm/s
 //  Overridden if EEPROM activated.
 #define EXT0_MAX_START_FEEDRATE 10
@@ -640,8 +640,8 @@ on this endstop.
 #define DISABLE_E false
 
 // Inverting axis direction
-#define INVERT_X_DIR false
-#define INVERT_Y_DIR false
+#define INVERT_X_DIR true
+#define INVERT_Y_DIR true
 #define INVERT_Z_DIR false
 
 //// ENDSTOP SETTINGS:
@@ -683,7 +683,7 @@ on this endstop.
 // You can disable endstop checking for print moves. This is needed, if you get sometimes
 // false signals from your endstops. If your endstops don't give false signals, you
 // can set it on for safety.
-#define ALWAYS_CHECK_ENDSTOPS true
+#define ALWAYS_CHECK_ENDSTOPS false
 
 // maximum positions in mm - only fixed numbers!
 // For delta robot Z_MAX_LENGTH is the maximum travel of the towers and should be set to the distance between the hotend
@@ -827,9 +827,9 @@ Mega. Used only for nonlinear systems like delta or tuga. */
     The axis order in all axis related arrays is X, Y, Z
      Overridden if EEPROM activated.
     */
-#define MAX_FEEDRATE_X 200
-#define MAX_FEEDRATE_Y 200
-#define MAX_FEEDRATE_Z 2
+#define MAX_FEEDRATE_X 5000
+#define MAX_FEEDRATE_Y 5000
+#define MAX_FEEDRATE_Z 5000
 
 /** Home position speed in mm/s. Overridden if EEPROM activated. */
 #define HOMING_FEEDRATE_X 80
@@ -1041,7 +1041,7 @@ matches, the stored values are used to overwrite the settings.
 IMPORTANT: With mode <>0 some changes in Configuration.h are not set any more, as they are
            taken from the EEPROM.
 */
-#define EEPROM_MODE 5 // Rev 5 = new Z Jerk value
+#define EEPROM_MODE 0 // Rev 5 = new Z Jerk value
 
 
 /**************** duplicate motor driver ***************
