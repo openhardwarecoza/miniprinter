@@ -82,13 +82,13 @@
 #define EXT0_X_OFFSET 0
 #define EXT0_Y_OFFSET 0
 #define EXT0_Z_OFFSET 0
-#define EXT0_STEPS_PER_MM 370
+#define EXT0_STEPS_PER_MM 46.5
 #define EXT0_TEMPSENSOR_TYPE 1
 #define EXT0_TEMPSENSOR_PIN TEMP_0_PIN
 #define EXT0_HEATER_PIN HEATER_0_PIN
 #define EXT0_STEP_PIN ORIG_E0_STEP_PIN
 #define EXT0_DIR_PIN ORIG_E0_DIR_PIN
-#define EXT0_INVERSE 0
+#define EXT0_INVERSE 1
 #define EXT0_ENABLE_PIN ORIG_E0_ENABLE_PIN
 #define EXT0_ENABLE_ON 0
 #define EXT0_MIRROR_STEPPER 0
@@ -120,6 +120,7 @@
 #define EXT0_DECOUPLE_TEST_PERIOD 12000
 #define EXT0_JAM_PIN -1
 #define EXT0_JAM_PULLUP 0
+//#define EXT0_EXTRUDER_COOLER_PIN ORIG_FAN2_PIN
 
 #define FEATURE_RETRACTION 1
 #define AUTORETRACT_ENABLED 0
@@ -164,7 +165,7 @@
 
 // ############# Heated bed configuration ########################
 
-#define HAVE_HEATED_BED 0
+#define HAVE_HEATED_BED 1
 #define HEATED_BED_PREHEAT_TEMP 55
 #define HEATED_BED_MAX_TEMP 120
 #define SKIP_M190_IF_WITHIN 3
@@ -245,13 +246,13 @@ It also can add a delay to wait for spindle to run on full speed.
 #define MULTI_ZENDSTOP_HOMING 0
 #define ENDSTOP_PULLUP_X_MIN true
 #define ENDSTOP_X_MIN_INVERTING true
-#define MIN_HARDWARE_ENDSTOP_X false
+#define MIN_HARDWARE_ENDSTOP_X true
 #define ENDSTOP_PULLUP_Y_MIN true
 #define ENDSTOP_Y_MIN_INVERTING true
-#define MIN_HARDWARE_ENDSTOP_Y false
+#define MIN_HARDWARE_ENDSTOP_Y true
 #define ENDSTOP_PULLUP_Z_MIN true
 #define ENDSTOP_Z_MIN_INVERTING true
-#define MIN_HARDWARE_ENDSTOP_Z false
+#define MIN_HARDWARE_ENDSTOP_Z true
 #define ENDSTOP_PULLUP_Z2_MINMAX true
 #define ENDSTOP_Z2_MINMAX_INVERTING false
 #define MINMAX_HARDWARE_ENDSTOP_Z2 false
@@ -544,7 +545,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define FEATURE_MEMORY_POSITION 1
 #define FEATURE_CHECKSUM_FORCED 0
 #define FEATURE_FAN_CONTROL 1
-#define FEATURE_FAN2_CONTROL 0
+#define FEATURE_FAN2_CONTROL 1
 #define FEATURE_CONTROLLER 0
 #define ADC_KEYPAD_PIN -1
 #define LANGUAGE_EN_ACTIVE 1

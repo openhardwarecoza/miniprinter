@@ -187,7 +187,7 @@
 <layer number="251" name="SMDround" color="7" fill="1" visible="no" active="yes"/>
 <layer number="252" name="BR-BS" color="4" fill="9" visible="no" active="yes"/>
 <layer number="253" name="BR-LS" color="1" fill="2" visible="no" active="yes"/>
-<layer number="254" name="cooling" color="13" fill="1" visible="no" active="yes"/>
+<layer number="254" name="cooling" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="255" name="OHSILK" color="5" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
@@ -263,6 +263,10 @@
 <wire x1="-143.8" y1="71.4" x2="-143.8" y2="31.4" width="0.1524" layer="254"/>
 <circle x="100.9" y="72" radius="0.22360625" width="0.254" layer="22"/>
 <circle x="100.9" y="72" radius="0.1" width="0.254" layer="22"/>
+<wire x1="99.7" y1="80.8" x2="106" y2="79.6" width="0.1524" layer="254"/>
+<wire x1="99.8" y1="78.4" x2="106" y2="77" width="0.1524" layer="254"/>
+<wire x1="99.9" y1="75.8" x2="106.1" y2="74.5" width="0.1524" layer="254"/>
+<wire x1="99.8" y1="73.2" x2="106.1" y2="71.9" width="0.1524" layer="254"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">

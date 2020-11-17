@@ -12,19 +12,19 @@
 
 #define ORIG_X_STEP_PIN     62
 #define ORIG_X_DIR_PIN      63
-#define ORIG_X_MIN_PIN      -1
+#define ORIG_X_MIN_PIN      3
 #define ORIG_X_MAX_PIN      -1
 #define ORIG_X_ENABLE_PIN   61
 
 #define ORIG_Y_STEP_PIN     59 
 #define ORIG_Y_DIR_PIN      60
-#define ORIG_Y_MIN_PIN      -1
+#define ORIG_Y_MIN_PIN      8
 #define ORIG_Y_MAX_PIN      -1
 #define ORIG_Y_ENABLE_PIN   58
 
 #define ORIG_Z_STEP_PIN     56
 #define ORIG_Z_DIR_PIN      57
-#define ORIG_Z_MIN_PIN      -1
+#define ORIG_Z_MIN_PIN      9
 #define ORIG_Z_MAX_PIN      -1
 #define ORIG_Z_ENABLE_PIN   55
 
